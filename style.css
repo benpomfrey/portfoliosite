@@ -106,21 +106,21 @@ button:hover {
 .shape:nth-child(6) {
   top: 55%;
   left: 85%;
-  animation-delay: 3s;
-  background: #BAB3FF;
+  animation-delay: 6s;
+  background: #5645FF;
 }
 
 .shape:nth-child(7) {
   top: 65%;
-  left: 550%;
-  animation-delay: 3s;
-  background: #BAB3FF;
+  left: 55%;
+  animation-delay: 32s;
+  background: #6c63ff;
 }
 
 .shape:nth-child(8) {
   top: 75%;
   left: 15%;
-  animation-delay: 3s;
+  animation-delay: 1s;
   background: #BAB3FF;
 }
 
