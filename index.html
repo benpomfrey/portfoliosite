@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="referrer" content="origin" />
+  <title>Ben Pomfrey - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background">
+  <div class="shape"></div>
+  <div class="shape"></div>
+  <div class="shape"></div>
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
+
+<nav>
+  <h1>Ben Pomfrey</h1>
+  <div>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('projects')">Projects</button>
+    <button onclick="showPage('showreel')">Showreel</button>
+    <button onclick="showPage('about')">About</button>
+  </div>
+</nav>
+
+<section id="home" class="page active">
+  <h2>Game Developer</h2>
+  <p>Creating interactive experiences and games.</p>
+</section>
+
+<section id="projects" class="page">
+  <h2>Projects</h2>
+  <div class="card">Minecraft Mod Project</div>
+  <div class="card">Unreal Engine Game</div>
+</section>
+
+<section id="showreel" class="page">
+  <h2>Showreel</h2>
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?si=RwgBiJKVQHP3KweD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+
+<section id="about" class="page">
+  <h2>About Me</h2>
+  <p>I am a game developer based in Hailsham, England. I have experience in Unreal Engine 5, Unity, Blender, Python, and Web Development.</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
