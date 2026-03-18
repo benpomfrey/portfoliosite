@@ -72,60 +72,67 @@ button:hover {
   background: #6c63ff;
   opacity: 0.3;
   border-radius: 50%;
-  animation: float 6s infinite ease-in-out;
+  animation: float 4s infinite ease-in-out;
 }
 
 .shape:nth-child(2) {
   top: 10%;
   left: 50%;
-  animation-delay: 2s;
+  animation-delay: 0s;
   background: #BAB3FF;
+  animation: float 5s infinite ease-in-out;
 }
 
 .shape:nth-child(3) {
   top: 5%;
   left: 80%;
-  animation-delay: 4s;
+  animation-delay: 0s;
   background: #5645FF;
+  animation: float 6s infinite ease-in-out;
 }
 
 .shape:nth-child(4) {
   top: 35%;
   left: 60%;
-  animation-delay: 3s;
+  animation-delay: 0s;
   background: #6c63ff;
+  animation: float 7s infinite ease-in-out;
 }
 
 .shape:nth-child(5) {
   top: 45%;
   left: 20%;
-  animation-delay: 3s;
+  animation-delay: 0s;
   background: #BAB3FF;
+  animation: float 8s infinite ease-in-out;
 }
 
 .shape:nth-child(6) {
   top: 55%;
   left: 85%;
-  animation-delay: 6s;
-  background: #5645FF;
+  animation-delay: 0s;
+  background: #BAB3FF;
+  animation: float 9s infinite ease-in-out;
 }
 
 .shape:nth-child(7) {
-  top: 65%;
+  top: 75%;
   left: 55%;
-  animation-delay: 32s;
+  animation-delay: 0s;
   background: #6c63ff;
+  animation: float 10s infinite ease-in-out;
 }
 
 .shape:nth-child(8) {
-  top: 75%;
-  left: 15%;
-  animation-delay: 1s;
+  top: 85%;
+  left: 05%;
+  animation-delay: 0.1s;
   background: #BAB3FF;
+  animation: float 11s infinite ease-in-out;
 }
 
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-50px); }
+  0%, 100% { transform: translateY(0); opacity: 0.3; }
+  50% { transform: translateY(-50px); opacity: 0.25; }
 }
