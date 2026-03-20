@@ -46,10 +46,13 @@ button:hover {
   pointer-events: auto;
 }
 
+#home {
+  pointer-events: none;
+}
+
 #projects {
   display: flex;
   flex-direction: column;
-  align-items: left;
 }
 
 .card {
@@ -60,13 +63,38 @@ button:hover {
   margin: 10px 0;
   padding: 20px;
   border-radius: 12px;
-  transition: 0.3s
-
+  transition: 0.3s;
+  height: 200px
 }
 
 .card:hover {
+  height: 400px;
+  transition: 0.7s;
   transform: scale(1.01);
   background: rgba(255,255,255,0.2);
+}
+
+.video1 {
+  position: absolute;
+  left:82%;
+  top: 17.5%;
+  transition:0.7s
+}
+
+.hidden1 {
+  opacity: 0
+}
+
+.card:hover .video1 {
+  transition:0.7s;
+  width: 622px;
+  height: 350px;
+  transform: translateX(-310px) translateY(-43px);
+}
+
+.card:hover .hidden1 {
+  opacity: 1;
+  transition: 1.5s;
 }
 
 .background {
@@ -74,7 +102,6 @@ button:hover {
   width: 100%;
   height: 100%;
   z-index: -1;
-  pointer-events: none;
 }
 
 .shape {
@@ -86,6 +113,24 @@ button:hover {
   opacity: 0.3;
   border-radius: 50%;
   animation: float 4s infinite ease-in-out;
+}
+
+.bubble {
+  position: absolute;
+  width:200px;
+  height:200px; 
+  left: 50.1%;
+  top: 10%;
+  animation-delay: 0s;
+  border-radius: 50%;
+  animation: bubblefloat 5s infinite ease-in-out;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.bubble:hover {
+   opacity: 100%;
 }
 
 .shape:nth-child(2) {
@@ -144,8 +189,17 @@ button:hover {
   animation: float 11s infinite ease-in-out;
 }
 
-
 @keyframes float {
   0%, 100% { transform: translateY(0); opacity: 0.3; }
   50% { transform: translateY(-50px); opacity: 0.25; }
+}
+
+@keyframes bubblefloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
 }
