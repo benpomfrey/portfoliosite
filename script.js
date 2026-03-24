@@ -7,3 +7,7 @@ function showPage(pageId) {
 
   document.getElementById(pageId).classList.add('active');
 }
+
+function openURL(url) {
+    window.open(url, '_blank').focus();
+}

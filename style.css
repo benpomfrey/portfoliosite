@@ -23,6 +23,18 @@ button {
   transition: 0.3s;
 }
 
+.button2 {
+  margin-left: 0px;
+  padding: 10px 15px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+  opacity: 0
+}
+
 button:hover {
   background: #ff6584;
   transform: scale(1.1);
@@ -91,11 +103,16 @@ button:hover {
   height: 350px;
   transform: translateX(-310px) translateY(-43px);
 }
-
 .card:hover .hidden1 {
   opacity: 1;
   transition: 1.5s;
 }
+
+.card:hover .button2 {
+    opacity: 1;
+    transition: 1.5s;
+}
+
 
 .background {
   position: fixed;
@@ -132,6 +149,7 @@ button:hover {
 .bubble:hover {
    opacity: 100%;
 }
+ 
 
 .shape:nth-child(2) {
   top: 10%;
